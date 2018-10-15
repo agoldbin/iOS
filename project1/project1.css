@@ -1,0 +1,46 @@
+.row {
+    margin: 8px;
+    /* margin: 20px; */
+}
+
+.colorDiv {
+    width: 100%;
+    height: 10%;
+    display: block;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.colorRadio > input + div {
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+label div:hover {
+    border: 3px solid;
+    border-color: lime;
+}
+
+.colorRadio > input:checked + div {
+    border: 3px solid;
+    border-color: brown;
+}
+
+label > input {
+    visibility: hidden;
+    position: absolute;
+}
+
+label img:hover {
+    border: 3px solid;
+    border-color: lime;
+}
+
+label input:checked ~ img {
+    border: 3px solid;
+    border-color: red;
+}
+
+img {
+    max-width: 100px;
+}

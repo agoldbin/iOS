@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8; width=device-width,  initial-scale=1" name="viewport" />
+    <!-- content="width=device-width, initial-scale=1"> -->
+    <script src="project1.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" href="project1.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.js" integrity="sha256-5i/mQ300M779N2OVDrl16lbohwXNUdzL/R2aVUXyXWA=" crossorigin="anonymous"></script>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!-- The next two items are to support jQuery datatables. Learn more about datatables here:https://datatables.net -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
+    <!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script> -->
+
+
+</head>
+
+<body id="" onload="clearForm()">
+    <div class="container">
+        <form id="estimateForm" class="form-inline">
+            <div id="lblStory" class="row">
+                <div class="form-group col-sm-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="story" id="story" value="oneStory" />
+                        <img src="images/oneStory.png" id="oneStory" />
+                    </label>
+                </div>
+                <div class="form-group col-sm-6">
+                    <label class="radio-inline">
+                        <input type="radio" name="story" id="story" value="twoStory" />
+                        <img src="images/twoStory.png" id="twoStory" />
+                    </label>
+                </div>
+            </div>
+
+            <!-- input for paint color img -->
+            <div id="lblColor" class="row">
+                <!--  TODO make these labels wrapped in div like house story code-->
+                <!-- <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_blue">
+                    <div id="blue" class="colorDiv" style="background-color:blue;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_grey">
+                    <div id="grey" class="colorDiv" style="background-color:grey;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_green">
+                    <div id="green" class="colorDiv" style="background-color:green;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_red">
+                    <div id="red" class="colorDiv" style="background-color:red;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_yellow">
+                    <div id="yellow" class="colorDiv" style="background-color:yellow;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_teal">
+                    <div id="teal" class="colorDiv" style="background-color:teal;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_white">
+                    <div id="white" class="colorDiv" style="background-color:gainsboro;"></div>
+                </label>
+                <!-- </div>
+            <div class="form-group col-sm-1"> -->
+                <label class="colorRadio form-group col-sm-1">
+                    <input type="radio" name="color" value="color_black">
+                    <div id="black" class="colorDiv" style="background-color:black;"></div>
+                </label>
+            </div>
+            <!-- </div> -->
+
+            <!-- input for exterior type img -->
+            <div id="lblSiding" class="row">
+                <!-- id="sidingOptions"> -->
+                <div class="form-group col-sm-2">
+                    <label class="radio-inline">
+                        <input type="radio" name="siding" id="siding_vinyl" value="vinyl">
+                        <img src="images/vinyl.jpg" id="vinyl" alt="">
+                    </label>
+                </div>
+                <div class="form-group col-sm-2">
+                    <label class="radio-inline">
+                        <input type="radio" name="siding" id="siding_wood" value="wood">
+                        <img src="images/wood.jpg" id="wood" alt="">
+                    </label>
+                </div>
+                <div class="form-group col-sm-2">
+
+                    <label class="radio-inline">
+                        <input type="radio" name="siding" id="siding_stucco" value="stucco">
+                        <img src="images/stucco.jpg" id="stucco" alt="">
+                    </label>
+                </div>
+                <div class="form-group col-sm-2">
+                    <label class="radio-inline">
+                        <input type="radio" name="siding" id="siding_brick" value="brick">
+                        <img src="images/brick.png" id="brick" alt="">
+                    </label>
+                </div>
+                <div class="form-group col-sm-4">
+                    <label class="radio-inline">
+                        <input type="radio" name="siding" id="siding_stone" value="stone">
+                        <img src="images/stone.jpg" id="stone" alt="">
+                    </label>
+                </div>
+            </div>
+
+            <div id="lblGarage" class="row">
+                <!-- input for garage size (number of vehicles) -->
+                <input type="text" id="garage" value="" placeholder="# of Vehicles" required />
+            </div>
+
+
+            <div id="lblSqft" class="row">
+                <!-- input for sq footage (must be number) -->
+                <input type="text" id="sqft" value="" placeholder="Sq Ft" required />
+            </div>
+
+                    <!-- submit button -->
+            <input type="button" class="btn-primary" id="btnSubmit" value="Get Estimate" onclick="submitForm()"/>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Week4Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="B92-ne-Pl7" userLabel="NLCentralStackView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="f0h-zt-fV1" userLabel="CubsStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CubsMLBIcon" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-NA-pN6" userLabel="cubs">
+                                                <rect key="frame" x="0.0" y="10" width="90" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="X5p-9O-6nI"/>
+                                                    <constraint firstAttribute="height" constant="72" id="nNn-pu-gqi"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3jS-AZ-xy9" userLabel="NewSceneButton">
+                                                <rect key="frame" x="115" y="31" width="90" height="30"/>
+                                                <state key="normal" title="go to new scene"/>
+                                                <connections>
+                                                    <segue destination="hTb-RP-J0L" kind="show" id="mX5-T9-rvt"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aXu-Pa-Nap" userLabel="cubsLabel">
+                                                <rect key="frame" x="230" y="36" width="90" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Eph-p8-Jc4" userLabel="BrewersStackView">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BrewersMLBIcon" translatesAutoresizingMaskIntoConstraints="NO" id="xcP-zU-PI7" userLabel="brewers">
+                                                <rect key="frame" x="0.0" y="10" width="147.5" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="5OG-8G-WXt"/>
+                                                    <constraint firstAttribute="width" constant="72" id="np9-tM-uOm"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MA-UB-Dld">
+                                                <rect key="frame" x="172.5" y="36" width="147.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="HIu-cc-3GM" userLabel="CardinalsStackView">
+                                        <rect key="frame" x="0.0" y="184" width="320" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardinalsMLBIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mhg-u6-InF" userLabel="cardinals">
+                                                <rect key="frame" x="0.0" y="10" width="147.5" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="3TS-kh-ym1"/>
+                                                    <constraint firstAttribute="height" constant="72" id="W8L-GI-pRs"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N70-iv-TIU">
+                                                <rect key="frame" x="172.5" y="36" width="147.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="117-Hh-Pzz" userLabel="PiratesStackView">
+                                        <rect key="frame" x="0.0" y="276" width="320" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PiratesMLBIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ez2-4N-oRT" userLabel="pirates">
+                                                <rect key="frame" x="0.0" y="10" width="147.5" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="Wl5-yg-ftx"/>
+                                                    <constraint firstAttribute="width" constant="72" id="sfn-gt-Sej"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9L-ou-6Mf">
+                                                <rect key="frame" x="172.5" y="36" width="147.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ru6-6K-HKd" userLabel="RedsStackView">
+                                        <rect key="frame" x="0.0" y="368" width="320" height="92"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedsMLBIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VWR-bR-NeB" userLabel="reds">
+                                                <rect key="frame" x="0.0" y="10" width="147.5" height="72"/>
+                                                <gestureRecognizers/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="72" id="E1i-6d-zdh"/>
+                                                    <constraint firstAttribute="height" constant="72" id="fol-Rz-97E"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ow-Q7-yp9">
+                                                <rect key="frame" x="172.5" y="36" width="147.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="117-Hh-Pzz" firstAttribute="centerX" secondItem="B92-ne-Pl7" secondAttribute="centerX" id="E05-Fm-wQH"/>
+                                    <constraint firstItem="f0h-zt-fV1" firstAttribute="centerX" secondItem="B92-ne-Pl7" secondAttribute="centerX" id="Fiq-V5-VZs"/>
+                                    <constraint firstItem="HIu-cc-3GM" firstAttribute="centerX" secondItem="B92-ne-Pl7" secondAttribute="centerX" id="GKs-Q6-Ic4"/>
+                                    <constraint firstItem="Eph-p8-Jc4" firstAttribute="leading" secondItem="f0h-zt-fV1" secondAttribute="leading" id="cfw-pX-aYh"/>
+                                    <constraint firstItem="HIu-cc-3GM" firstAttribute="leading" secondItem="f0h-zt-fV1" secondAttribute="leading" id="fz8-3E-QIV"/>
+                                    <constraint firstItem="ru6-6K-HKd" firstAttribute="leading" secondItem="f0h-zt-fV1" secondAttribute="leading" id="i1G-7I-bIi"/>
+                                    <constraint firstItem="Eph-p8-Jc4" firstAttribute="centerX" secondItem="B92-ne-Pl7" secondAttribute="centerX" id="k34-vo-fyb"/>
+                                    <constraint firstItem="117-Hh-Pzz" firstAttribute="leading" secondItem="f0h-zt-fV1" secondAttribute="leading" id="nsh-eK-iqF"/>
+                                    <constraint firstItem="ru6-6K-HKd" firstAttribute="centerX" secondItem="B92-ne-Pl7" secondAttribute="centerX" id="x0E-uN-1OJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B92-ne-Pl7" secondAttribute="bottom" id="6Z7-Bg-nfd"/>
+                            <constraint firstAttribute="trailing" secondItem="B92-ne-Pl7" secondAttribute="trailing" id="j2Q-SR-9wW"/>
+                            <constraint firstItem="B92-ne-Pl7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ko4-Ii-YdP"/>
+                            <constraint firstItem="B92-ne-Pl7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pQH-Up-yze"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="5ba-vC-Vbj"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="133.74384236453201"/>
+        </scene>
+        <!--Gesture View Controller-->
+        <scene sceneID="WRW-XG-mfa">
+            <objects>
+                <viewController id="hTb-RP-J0L" customClass="GestureViewController" customModule="Week4Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Ni-B0-Cdn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="w7G-YU-LGl"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="GFX-6T-bdu" appends="YES" id="gS2-Tc-obX"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOu-6k-05H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="GFX-6T-bdu">
+                    <connections>
+                        <action selector="tappedScreen:" destination="hTb-RP-J0L" id="luG-D1-Kky"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="904" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BrewersMLBIcon" width="1024" height="1024"/>
+        <image name="CardinalsMLBIcon" width="1024" height="1024"/>
+        <image name="CubsMLBIcon" width="1024" height="1024"/>
+        <image name="PiratesMLBIcon" width="1024" height="1024"/>
+        <image name="RedsMLBIcon" width="1024" height="1024"/>
+    </resources>
+</document>
