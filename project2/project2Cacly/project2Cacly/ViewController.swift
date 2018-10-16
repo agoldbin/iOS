@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     var calcInput = ""
     var currentString = ""
     var calcConvert = 0.0
+    let addition    = "+"
+    let subtraction = "-"
+    let division    = "/"
+    let multiplication = "*"
+    let toggle = "+/-"
+    let modulo = "%"
     var allInput: [Any] = []
 //    TODO make initalizer
 //    init?(calcInput: String, calcConvert: Double) {
@@ -26,134 +32,187 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func buttonTouched(_ sender: UIButton) {
+    @IBAction func symbolTouched(_ sender: UIButton) {
+    }
+    
+    @IBAction func numberTouched(_ sender: UIButton) {
 //        TODO get switch statement working
 //        TODO append string with button touched
 //        TODO convert string to double
-        if let title = sender.currentTitle {
+//        if let title = sender.currentTitle {
 //        TODO test if array is empty. If so and input isn't number, do nothing
-            if (allInput.count == 0) {
-                switch (title) {
-                    case "Clear":
-                    
-                        return
-                    case "=":
-
-                        return
-                    // TODO exclude this? make first number entered negative?
-                    // TODO also figure out what to do with +/- button
-                    case "-":
-                    
-                        break
-                    case "+":
-                    
-                        return
-                    case "*":
-                    
-                        break
-                    case "/":
-                    
-                        return
-                    case "%":
-                        
-                        return
-                    default:
-                        print("\(title) button has some function or is a number")
-                        break
-                }
-            } else {
-                switch (title) {
-                    case "Clear":
-                        totalLabel.text = ""
-                        allInput.removeAll()
-                        print("Input items cleared")
-                        break
-                    case "=":
-                        
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "-":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "+":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "*":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "/":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "%":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "+/-":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case ".":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "1":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "2":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "3":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "4":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "5":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "6":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "7":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "8":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    case "9":
-                        currentString = calcInput + title
-                        totalLabel.text = currentString
-                        break
-                    default:
-                        print("Error occured, unknown button pressed")
-                        return
-                }
-            }
-            print(title)
-//            totalLabel.text = title
-            
-        }
+//            if (allInput.count == 0) {
+//                switch (title) {
+//                    case "Clear":
+//
+//                        return
+//                    case "=":
+//
+//                        return
+//                    // TODO exclude this? make first number entered negative?
+//                    // TODO also figure out what to do with +/- button
+//                    case "-":
+//
+//                        break
+//                    case "+":
+//
+//                        return
+//                    case "*":
+//
+//                        break
+//                    case "/":
+//
+//                        return
+//                    case "%":
+//
+//                        return
+//                    default:
+//                        print("\(title) button has some function or is a number")
+//                        break
+//                }
+//            } else {
+//                switch (title) {
+//                    case "Clear":
+//                        totalLabel.text = ""
+//                        allInput.removeAll()
+//                        print("Input items cleared")
+//                        break
+//                    case "=":
+//
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "-":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "+":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "*":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "/":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "%":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "+/-":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case ".":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "1":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "2":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "3":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "4":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "5":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "6":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "7":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "8":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    case "9":
+//                        currentString = calcInput + title
+//                        totalLabel.text = currentString
+//                        break
+//                    default:
+//                        print("Error occured, unknown button pressed")
+//                        return
+//                }
+//            }
+//            print(title)
+////            totalLabel.text = title
+//
+//        }
     }
+    
+//    func numberPressed(title: String) {
+//        switch(title) {
+//            case "1":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "2":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "3":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "4":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "5":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "6":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "7":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "8":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "9":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            case "0":
+//                currentString = calcInput + title
+//                totalLabel.text = currentString
+//                break
+//            default:
+//                print("Input is not a number")
+//                return
+//        }
+    }
+    
     
     func addNumberToArray() {
         currentString = calcInput + title!
-        calcConvert = Double(calcInput)
+        calcConvert = Double(calcInput)!
         allInput.append(calcConvert)
         calcInput = ""
     }
+    
     
     func total() {
         
