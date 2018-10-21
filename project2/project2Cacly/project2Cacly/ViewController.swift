@@ -9,117 +9,150 @@
 import UIKit
 
 class ViewController: UIViewController {
-//    var calcInput = ""
     var currentString = ""
-//    var calcConvert = 0.0
-    var currentNumber = 0.0
-    var previousNumber = 0.0
-    var symbol = ""
+    var currentNumber: Double = 0.0
+    var previousNumber: Double = 0.0
+    var symbol: Int = 0
     let toggle = "+/-"
-    let modulo = "%"
-    let operators = ["+", "-", "/", "*"]
-//    var allInput: [Any] = []
-//    var lastOperator = ""
-//    TODO make initalizer
-
+    var performMath = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        totalLabel.text = ""
+
         totalLabel.text = "Hello world"
     }
 
     @IBAction func symbolTouched(_ sender: UIButton) {
-            // Check if previous button was also an operator
-            
-            // Check if operator is first thing typed
-            // Check if ... something...
-            //        if ()
-//        if value1 == nil {
-//            value1 = Double(currentString)!
-//        } else {
-//            calcInput = "\(value1)\(currentString)"
-//            value1 = Double(calcInput)!
-//        }
-
-        if let title = sender.currentTitle {
-                print(title)
-//                if value1 == 0.0 {
-//                    value1 =
-                    previousNumber = 0.0
-//                    currentString = ""
-//                }
-            switch title {
-            case "Clear":
-                currentString = ""
+        let title = sender.tag
+        currentString = ""
+//        previousNumber = currentNumber
+        print("debug 2: \(previousNumber)")
+//        currentNumber = 0
+        switch title {
+            case 11:
+            // clear
                 totalLabel.text = ""
+//                currentString = ""
+//                totalLabel.text = ""
                 break
-            case "+/-":
-                toggleValue()
+            case 12:
+            // *
+                totalLabel.text = "x"
+//                totalLabel.text = "x"
+//                symbol = 12
                 break
-            case "-":
-                if (currentString.suffix(3) == toggle) {
-                    toggleValue()
-                } else {
-                    currentString = currentString.dropLast() + title
-                }
+            case 13:
+            // /
+                totalLabel.text = "/"
+//                symbol = 13
                 break
-            case "=":
-                calcInput = "\(currentNumber)\(currentString)"
-//                value2 = Double(currentString)
-                symbol = String(currentString.prefix(1))
-                print(symbol)
-                currentString = String(currentString.dropFirst())
-                print(currentString)
-//                calcConvert = Double(calcInput)!
-                print("calc input: \(calcInput)")
+            case 14:
+            // -
+                totalLabel.text = "-"
+                break
+            case 15:
+            // +
+                totalLabel.text = "+"
+                break
+            case 16:
+            // =
+//                currentString = String(currentString.dropFirst())
                 print("value: \(currentNumber)")
-                print("string: \(currentString)")
+//                print("string: \(currentString)")
+                performMath = true
+                performOperation()
                 break
-//            case (totalLabel.text == ""):
-//                print("Symbol can't be first thing typed")
-//                break
+            case 17:
+            // %
+                totalLabel.text = "%"
+                break
+            case 18:
+            // +/-
+                currentNumber = toggleValue(currentNumber: currentNumber)
+                return
             default:
-                currentString = ""
-                currentString = currentString + title
-//                print("Err in switch")
+                totalLabel.text = ""
+                print("Err in switch")
                 break
-            }
-
-//                print("Cannot have 2 operators in a row. Replacing operator.")
-
-            totalLabel.text = currentString
         }
+        
+        symbol = title
+        performMath = true
+        if performMath {
+            performOperation()
+        }
+        currentNumber = 0
+//        totalLabel.text = currentString
     }
     
+    func performOperation() {
+        print(symbol)
+        switch symbol {
+        case 12:
+            previousNumber *= currentNumber
+            break
+        case 13:
+            previousNumber /= currentNumber
+            print("\(previousNumber) / \(currentNumber)")
+            break
+        case 14:
+            previousNumber -= currentNumber
+            break
+        case 15:
+            previousNumber += currentNumber
+            break
+        case 17:
+//            previousNumber = previousNumber % currentNumber
+            break
+        default:
+            print("Err performing operation")
+        }
+        print(previousNumber)
+        currentNumber = 0
+        totalLabel.text = String(previousNumber)
+        performMath = false
+    }
+    
+//    }
+    
     @IBAction func numberTouched(_ sender: UIButton) {
-//        TODO get switch statement working
-//        TODO append string with button touched
-//        TODO convert string to double
         if let title = sender.currentTitle {
-            print(title)
-            // Check if current number already contains decimal
-            if (sender.currentTitle == "." && currentString.contains(".")) {
+            print("debug 1: \(title)")
+            if (sender.currentTitle == "." && (totalLabel.text?.contains("."))!) {
                 print("Number may only contain 1 decimal")
+//            } else if (!(Double(currentNumber) != nil)) {
+//                currentString += title
+//                currentNumber = Double(totalLabel.text)
+            // Check if current number already contains decimal
+            
             } else {
-                currentString = currentString + title
-                print(currentString)
-                try? previousNumber = Double(currentString)!
-                
-//                value2 = Double(currentString)!
-                totalLabel.text = currentString
+                currentString += title
+                currentNumber = Double(currentString)!
+//                currentNumber = Double(currentString)!
+//                currentString += title
             }
+//            currentNumber = Double(totalLabel.text)
+//            currentNumber = Double(currentString)!
+            //                print(currentString)
+            print("Cur num: \(currentNumber)")
+//            totalLabel.text = String(currentNumber)
+            totalLabel.text = currentString
         
         }
     }
     
     
-    func toggleValue() {
-        print()
-        previousNumber = previousNumber * -1
+    func toggleValue(currentNumber: Double) -> Double {
+        print("debug 3: \(currentNumber)")
+        let toggledNumber = currentNumber * -1
+        print("Toggled num: \(toggledNumber)")
+        totalLabel.text = String(toggledNumber)
+//        previousNumber = previousNumber * -1
 //        currentString = currentString * -1
-        currentString = String(previousNumber)
+//        currentString = String(previousNumber)
+        return toggledNumber
     }
     
 
