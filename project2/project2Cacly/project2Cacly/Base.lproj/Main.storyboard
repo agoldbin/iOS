@@ -39,7 +39,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="+/-"/>
                                                 <connections>
-                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9YT-CO-1fO"/>
+                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLt-i8-5Ih"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAo-sw-Vn4">
@@ -147,7 +147,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giZ-pZ-erC"/>
+                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQW-M3-GBz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFy-ts-QST">
@@ -185,7 +185,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="."/>
                                                 <connections>
-                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adn-wr-baD"/>
+                                                    <action selector="numberTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QqP-ko-9rG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI4-wg-bdI">
@@ -194,7 +194,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="="/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zY9-Cq-jaa"/>
+                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqp-vb-Hnz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a44-ax-oAV">
