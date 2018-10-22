@@ -57,7 +57,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Clear"/>
                                                 <connections>
-                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l92-ad-MOk"/>
+                                                    <action selector="clearOrEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EE8-Lj-mfN"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -194,7 +194,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="="/>
                                                 <connections>
-                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqp-vb-Hnz"/>
+                                                    <action selector="clearOrEqual:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cwr-Df-ICR"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a44-ax-oAV">
