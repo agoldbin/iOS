@@ -30,7 +30,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="x"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8S-ih-gB2"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8S-ih-gB2"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwb-dN-K6U">
@@ -39,7 +39,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="+/-"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLt-i8-5Ih"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RLt-i8-5Ih"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAo-sw-Vn4">
@@ -48,7 +48,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="%"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0s-gg-ARG"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i0s-gg-ARG"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta6-yA-FYa">
@@ -57,7 +57,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="Clear"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l92-ad-MOk"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l92-ad-MOk"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -71,7 +71,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="/"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TB-wF-qeV"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3TB-wF-qeV"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jo9-dc-gnT">
@@ -109,7 +109,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="-"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WL1-27-Ngh"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WL1-27-Ngh"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfJ-rr-0Qx">
@@ -147,7 +147,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="+"/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQW-M3-GBz"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQW-M3-GBz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFy-ts-QST">
@@ -194,7 +194,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <state key="normal" title="="/>
                                                 <connections>
-                                                    <action selector="symbolTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqp-vb-Hnz"/>
+                                                    <action selector="operatorTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqp-vb-Hnz"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a44-ax-oAV">
