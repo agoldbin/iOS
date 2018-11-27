@@ -1,0 +1,299 @@
+[
+  {
+    "Number": 43,
+    "Position": "P",
+    "Name": "Matt Albers",
+    "BatsThrows": "L/R",
+    "Ht": "6'1",
+    "Wt": "225lbs",
+    "DOB": "1/20/83"
+  },
+  {
+    "Number": 57,
+    "Position": "P",
+    "Name": "Chase Anderson",
+    "BatsThrows": "R/R",
+    "Ht": "6'1",
+    "Wt": "200lbs",
+    "DOB": "11/30/87"
+  },
+  {
+    "Number": 50,
+    "Position": "P",
+    "Name": "Jacob Barnes",
+    "BatsThrows": "R/R",
+    "Ht": "6'2",
+    "Wt": "220lbs",
+    "DOB": "4/14/90"
+  },
+  {
+    "Number": 39,
+    "Position": "P",
+    "Name": "Corbin Burnes",
+    "BatsThrows": "R/R",
+    "Ht": "6'3",
+    "Wt": "205lbs",
+    "DOB": "10/22/94"
+  },
+  {
+    "Number": 33,
+    "Position": "P",
+    "Name": "Xavier Cedeno",
+    "BatsThrows": "L/L",
+    "Ht": "5'11",
+    "Wt": "210lbs",
+    "DOB": "8/26/86"
+  },
+  {
+    "Number": 45,
+    "Position": "P",
+    "Name": "Jhoulys Chacin",
+    "BatsThrows": "R/R",
+    "Ht": "6'3",
+    "Wt": "215lbs",
+    "DOB": "1/7/88"
+  },
+  {
+    "Number": 27,
+    "Position": "P",
+    "Name": "Zach Davies",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "155lbs",
+    "DOB": "2/7/93"
+  },
+  {
+    "Number": 41,
+    "Position": "P",
+    "Name": "Junior Guerra",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "205lbs",
+    "DOB": "1/16/85"
+  },
+  {
+    "Number": 71,
+    "Position": "P",
+    "Name": "Josh Hader",
+    "BatsThrows": "L/L",
+    "Ht": "6'3",
+    "Wt": "185lbs",
+    "DOB": "4/7/94"
+  },
+  {
+    "Number": 32,
+    "Position": "P",
+    "Name": "Jeremy Jeffress",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "205lbs",
+    "DOB": "9/21/87"
+  },
+  {
+    "Number": 38,
+    "Position": "P",
+    "Name": "Dan Jennings",
+    "BatsThrows": "L/L",
+    "Ht": "6'3",
+    "Wt": "210lbs",
+    "DOB": "4/17/87"
+  },
+  {
+    "Number": 46,
+    "Position": "P",
+    "Name": "Corey Knebel",
+    "BatsThrows": "R/R",
+    "Ht": "6'4",
+    "Wt": "220lbs",
+    "DOB": "11/26/91"
+  },
+  {
+    "Number": 25,
+    "Position": "P",
+    "Name": "Jordan Lyles",
+    "BatsThrows": "R/R",
+    "Ht": "6'4",
+    "Wt": "230lbs",
+    "DOB": "10/19/90"
+  },
+  {
+    "Number": 51,
+    "Position": "P",
+    "Name": "Freddy Peralta",
+    "BatsThrows": "R/R",
+    "Ht": "5'11",
+    "Wt": "175lbs",
+    "DOB": "6/4/96"
+  },
+  {
+    "Number": 48,
+    "Position": "P",
+    "Name": "Joakim Soria",
+    "BatsThrows": "R/R",
+    "Ht": "6'3",
+    "Wt": "200lbs",
+    "DOB": "5/18/84"
+  },
+  {
+    "Number": 54,
+    "Position": "P",
+    "Name": "Taylor Williams",
+    "BatsThrows": "S/R",
+    "Ht": "5'11",
+    "Wt": "195lbs",
+    "DOB": "7/21/91"
+  },
+  {
+    "Number": 53,
+    "Position": "P",
+    "Name": "Brandon Woodruff",
+    "BatsThrows": "L/R",
+    "Ht": "6'4",
+    "Wt": "215lbs",
+    "DOB": "2/10/93"
+  },
+  {
+    "Number": 15,
+    "Position": "C",
+    "Name": "Erik Kratz",
+    "BatsThrows": "R/R",
+    "Ht": "6'4",
+    "Wt": "250lbs",
+    "DOB": "6/15/80"
+  },
+  {
+    "Number": 26,
+    "Position": "C",
+    "Name": "Jacob Nottingham",
+    "BatsThrows": "R/R",
+    "Ht": "6'2",
+    "Wt": "230lbs",
+    "DOB": "4/3/95"
+  },
+  {
+    "Number": 9,
+    "Position": "C",
+    "Name": "Manny Pina",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "215lbs",
+    "DOB": "6/5/87"
+  },
+  {
+    "Number": 24,
+    "Position": "1B",
+    "Name": "Jesus Aguilar",
+    "BatsThrows": "R/R",
+    "Ht": "6'3",
+    "Wt": "250lbs",
+    "DOB": "6/30/90"
+  },
+  {
+    "Number": 3,
+    "Position": "SS",
+    "Name": "Orlando Arcia",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "165lbs",
+    "DOB": "8/4/94"
+  },
+  {
+    "Number": 18,
+    "Position": "3B",
+    "Name": "Mike Moustakas",
+    "BatsThrows": "L/R",
+    "Ht": "6'0",
+    "Wt": "225lbs",
+    "DOB": "9/11/88"
+  },
+  {
+    "Number": 14,
+    "Position": "SS/2B",
+    "Name": "Hernan Perez",
+    "BatsThrows": "R/R",
+    "Ht": "6'1",
+    "Wt": "215lbs",
+    "DOB": "3/26/91"
+  },
+  {
+    "Number": 13,
+    "Position": "SS",
+    "Name": "Tyler Saladino",
+    "BatsThrows": "R/R",
+    "Ht": "6'0",
+    "Wt": "200lbs",
+    "DOB": "7/20/89"
+  },
+  {
+    "Number": 5,
+    "Position": "2B",
+    "Name": "Jonathan Schoop",
+    "BatsThrows": "R/R",
+    "Ht": "6'1",
+    "Wt": "225lbs",
+    "DOB": "10/16/91"
+  },
+  {
+    "Number": 21,
+    "Position": "3B",
+    "Name": "Travis Shaw",
+    "BatsThrows": "L/R",
+    "Ht": "6'4",
+    "Wt": "230lbs",
+    "DOB": "4/16/90"
+  },
+  {
+    "Number": 7,
+    "Position": "1B",
+    "Name": "Eric Thames",
+    "BatsThrows": "L/R",
+    "Ht": "6'0",
+    "Wt": "210lbs",
+    "DOB": "11/10/86"
+  },
+  {
+    "Number": 8,
+    "Position": "LF",
+    "Name": "Ryan Braun",
+    "BatsThrows": "R/R",
+    "Ht": "6'2",
+    "Wt": "205lbs",
+    "DOB": "11/17/83"
+  },
+  {
+    "Number": 23,
+    "Position": "CF",
+    "Name": "Keon Broxton",
+    "BatsThrows": "R/R",
+    "Ht": "6'3",
+    "Wt": "195lbs",
+    "DOB": "5/7/90"
+  },
+  {
+    "Number": 6,
+    "Position": "CF",
+    "Name": "Lorenzo Cain",
+    "BatsThrows": "R/R",
+    "Ht": "6'2",
+    "Wt": "205lbs",
+    "DOB": "4/13/86"
+  },
+  {
+    "Number": 16,
+    "Position": "RF",
+    "Name": "Domingo Santana",
+    "BatsThrows": "R/R",
+    "Ht": "6'5",
+    "Wt": "220lbs",
+    "DOB": "8/5/92"
+  },
+  {
+    "Number": 22,
+    "Position": "RF",
+    "Name": "Christian Yelich",
+    "BatsThrows": "L/R",
+    "Ht": "6'3",
+    "Wt": "195lbs",
+    "DOB": "12/5/91"
+  }
+]

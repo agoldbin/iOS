@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="zoomAndPan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gD3-tK-FrR">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nyz-vj-3Mc">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nyz-vj-3Mc" firstAttribute="centerY" secondItem="gD3-tK-FrR" secondAttribute="centerY" id="P9K-Hg-TH6"/>
+                                    <constraint firstItem="nyz-vj-3Mc" firstAttribute="centerX" secondItem="gD3-tK-FrR" secondAttribute="centerX" id="jWC-dS-So9"/>
+                                    <constraint firstItem="nyz-vj-3Mc" firstAttribute="width" secondItem="gD3-tK-FrR" secondAttribute="width" id="uIk-wp-gCb"/>
+                                    <constraint firstItem="nyz-vj-3Mc" firstAttribute="height" secondItem="gD3-tK-FrR" secondAttribute="height" id="yyw-Xi-6V2"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zw3-pS-ZQk">
+                                <rect key="frame" x="35.5" y="101" width="39" height="30"/>
+                                <color key="backgroundColor" red="0.63916760679999995" green="0.6392438412" blue="0.63913244010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3bi-SL-uIG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpU-LB-Ti5">
+                                <rect key="frame" x="40" y="60" width="30" height="36"/>
+                                <color key="backgroundColor" red="0.63916760679999995" green="0.6392438412" blue="0.63913244010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="zoomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cck-dj-8Bb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXl-qY-oPD">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.63916760679999995" green="0.6392438412" blue="0.63913244010000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="-"/>
+                                <connections>
+                                    <action selector="zoomClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V8d-hU-49H"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OXl-qY-oPD" firstAttribute="top" secondItem="Zw3-pS-ZQk" secondAttribute="bottom" constant="5" id="0Oc-Wy-uLu"/>
+                            <constraint firstItem="Zw3-pS-ZQk" firstAttribute="top" secondItem="fpU-LB-Ti5" secondAttribute="bottom" constant="5" id="Ifc-jL-jV1"/>
+                            <constraint firstItem="fpU-LB-Ti5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="KEi-IU-Akv"/>
+                            <constraint firstItem="OXl-qY-oPD" firstAttribute="centerX" secondItem="Zw3-pS-ZQk" secondAttribute="centerX" id="PR9-qH-xig"/>
+                            <constraint firstItem="Zw3-pS-ZQk" firstAttribute="centerX" secondItem="fpU-LB-Ti5" secondAttribute="centerX" id="SIv-Wd-tPW"/>
+                            <constraint firstItem="fpU-LB-Ti5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="rdc-vL-c6h"/>
+                            <constraint firstItem="gD3-tK-FrR" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="tMo-la-PIw"/>
+                            <constraint firstItem="gD3-tK-FrR" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="uTI-I3-rko"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="nyz-vj-3Mc" id="j5P-DE-jga"/>
+                        <outlet property="scrollView" destination="gD3-tK-FrR" id="WI6-30-d2E"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="27.436281859070466"/>
+        </scene>
+    </scenes>
+</document>
